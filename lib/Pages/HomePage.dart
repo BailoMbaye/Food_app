@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_app/Widget/AppBarWidget.dart';
+import 'package:food_app/Widget/CategoriesWidget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -34,12 +35,12 @@ class HomePage extends StatelessWidget {
                     ),
                   ]),
               child: Padding(
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                   horizontal: 10,
                 ),
                 child: Row(
                   children: [
-                    Icon(
+                    const Icon(
                       CupertinoIcons.search,
                       color: Colors.red,
                     ),
@@ -47,7 +48,7 @@ class HomePage extends StatelessWidget {
                       height: 50,
                       width: 300,
                       child: Padding(
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                           horizontal: 15,
                         ),
                         child: TextFormField(
@@ -59,11 +60,29 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                     ),
+                    const Icon(
+                      Icons.filter_list,
+                      size: 19,
+                    ),
                   ],
                 ),
               ),
             ),
-          )
+          ),
+
+          //Category
+          const Padding(
+            padding: EdgeInsets.only(top: 20, left: 10),
+            child: Text(
+              "Categories",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
+          ),
+
+          const CategoriesWidget(),
         ],
       ),
     );
