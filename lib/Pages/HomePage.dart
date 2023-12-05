@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_app/Widget/AppBarWidget.dart';
 import 'package:food_app/Widget/CategoriesWidget.dart';
+import 'package:food_app/Widget/PopularItemsWidget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -82,7 +83,23 @@ class HomePage extends StatelessWidget {
             ),
           ),
 
+          // Category widget
           const CategoriesWidget(),
+
+          // Popular Items
+          const Padding(
+            padding: EdgeInsets.only(top: 20, left: 10),
+            child: Text(
+              "Popular",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
+          ),
+
+          // Popular Items Widget
+          const PopularItemsWidget(),
         ],
       ),
     );
