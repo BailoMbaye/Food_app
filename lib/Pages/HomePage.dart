@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_app/Widget/AppBarWidget.dart';
 import 'package:food_app/Widget/CategoriesWidget.dart';
+import 'package:food_app/Widget/NewestItemsWidget.dart';
 import 'package:food_app/Widget/PopularItemsWidget.dart';
 
 class HomePage extends StatelessWidget {
@@ -86,7 +87,7 @@ class HomePage extends StatelessWidget {
           // Category widget
           const CategoriesWidget(),
 
-          // Popular Items
+          // Popular Items Widget
           const Padding(
             padding: EdgeInsets.only(top: 20, left: 10),
             child: Text(
@@ -100,6 +101,21 @@ class HomePage extends StatelessWidget {
 
           // Popular Items Widget
           const PopularItemsWidget(),
+
+          //Newest Items
+          const Padding(
+            padding: EdgeInsets.only(top: 20, left: 10),
+            child: Text(
+              "Newest",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
+          ),
+
+          // Newest Items Widget
+          const NewestItemsWidget(),
         ],
       ),
     );
