@@ -132,11 +132,13 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
-        child: FloatingActionButton(
-          onPressed: () {},
+        child: FloatingActionButton.small(
+          onPressed: () {
+            Navigator.pushNamed(context, 'cartPage');
+          },
           child: Icon(
             CupertinoIcons.cart,
-            size: 28,
+            size: 20,
             color: Colors.red,
           ),
           backgroundColor: Colors.white,
