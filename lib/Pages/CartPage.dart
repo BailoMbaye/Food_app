@@ -31,6 +31,7 @@ class CartPage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  // Item Pizza
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 9),
                     child: Container(
@@ -39,7 +40,7 @@ class CartPage extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             color: Colors.grey,
                             spreadRadius: 3,
@@ -79,7 +80,7 @@ class CartPage extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  "4000 Fr",
+                                  "4 000 Fr",
                                   style: TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
@@ -102,15 +103,324 @@ class CartPage extends StatelessWidget {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   Icon(
-                                    CupertinoIcons.minus,
-                                    color: Colors.white,
-                                  ),
-                                  Icon(
                                     CupertinoIcons.plus,
                                     color: Colors.white,
+                                    size: 20,
+                                  ),
+                                  Text(
+                                    "2",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Icon(
+                                    CupertinoIcons.minus,
+                                    color: Colors.white,
+                                    size: 20,
                                   ),
                                 ],
                               ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  // Item Burger
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 9),
+                    child: Container(
+                      height: 100,
+                      width: 380,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.grey,
+                            spreadRadius: 3,
+                            blurRadius: 10,
+                            offset: Offset(0, 3),
+                          )
+                        ],
+                      ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            child: Image.asset(
+                              "images/burger.png",
+                              height: 80,
+                              width: 150,
+                            ),
+                          ),
+                          Container(
+                            width: 190,
+                            child: const Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Text(
+                                  "Hot Burger",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  "Taste Our Hot Burger",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    //fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  "1 500 Fr",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.red,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 5),
+                            child: Container(
+                              padding: const EdgeInsets.all(5),
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: const Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(
+                                    CupertinoIcons.plus,
+                                    color: Colors.white,
+                                    size: 20,
+                                  ),
+                                  Text(
+                                    "1",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Icon(
+                                    CupertinoIcons.minus,
+                                    color: Colors.white,
+                                    size: 20,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  // Item Drink
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 9),
+                    child: Container(
+                      height: 100,
+                      width: 380,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.grey,
+                            spreadRadius: 3,
+                            blurRadius: 10,
+                            offset: Offset(0, 3),
+                          )
+                        ],
+                      ),
+                      child: Row(
+                        children: [
+                          Container(
+                            alignment: Alignment.center,
+                            child: Image.asset(
+                              "images/drink.png",
+                              height: 80,
+                              width: 150,
+                            ),
+                          ),
+                          Container(
+                            width: 190,
+                            child: const Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Text(
+                                  "Cold Drink",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  "Taste Our Cold Drink",
+                                  style: TextStyle(
+                                    fontSize: 15,
+                                    //fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  "1 000 Fr",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.red,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 5),
+                            child: Container(
+                              padding: const EdgeInsets.all(5),
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: const Column(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Icon(
+                                    CupertinoIcons.plus,
+                                    color: Colors.white,
+                                    size: 20,
+                                  ),
+                                  Text(
+                                    "2",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Icon(
+                                    CupertinoIcons.minus,
+                                    color: Colors.white,
+                                    size: 20,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 30),
+                    child: Container(
+                      padding: const EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.withOpacity(0.5),
+                            spreadRadius: 3,
+                            blurRadius: 10,
+                            offset: const Offset(0, 3),
+                          )
+                        ],
+                      ),
+                      child: const Column(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 10,
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Items:',
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                                Text(
+                                  '10 ',
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Divider(
+                            color: Colors.black,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 10,
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Items:',
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                                Text(
+                                  '10 ',
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Divider(
+                            color: Colors.black,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 10,
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Items:',
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                                Text(
+                                  '10 ',
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Divider(
+                            color: Colors.black,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 10,
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Items:',
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                                Text(
+                                  '10 ',
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                              ],
                             ),
                           ),
                         ],
