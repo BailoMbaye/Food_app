@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_app/Widget/AppBarWidget.dart';
+import 'package:food_app/Widget/CartBottomNavBar.dart';
+import 'package:food_app/Widget/DrawerWidget.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
@@ -371,32 +373,11 @@ class CartPage extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  'Items:',
+                                  'Sub-Total:',
                                   style: TextStyle(fontSize: 20),
                                 ),
                                 Text(
-                                  '10 ',
-                                  style: TextStyle(fontSize: 20),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Divider(
-                            color: Colors.black,
-                          ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(
-                              vertical: 10,
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  'Items:',
-                                  style: TextStyle(fontSize: 20),
-                                ),
-                                Text(
-                                  '10 ',
+                                  '6 500 FR CFA',
                                   style: TextStyle(fontSize: 20),
                                 ),
                               ],
@@ -413,12 +394,39 @@ class CartPage extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
-                                  'Items:',
+                                  'Delivery:',
                                   style: TextStyle(fontSize: 20),
                                 ),
                                 Text(
-                                  '10 ',
+                                  '2 000 Fr CFA',
                                   style: TextStyle(fontSize: 20),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Divider(
+                            color: Colors.black,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 10,
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Total:',
+                                  style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  '8 500 FrCFA',
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.red,
+                                  ),
                                 ),
                               ],
                             ),
@@ -433,6 +441,8 @@ class CartPage extends StatelessWidget {
           ),
         ],
       ),
+      drawer: const DrawerWidget(),
+      bottomNavigationBar: CartBottomNavBar(),
     );
   }
 }
