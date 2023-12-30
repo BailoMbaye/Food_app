@@ -442,7 +442,7 @@ class CartPage extends StatelessWidget {
         ],
       ),
       drawer: const DrawerWidget(),
-      bottomNavigationBar: CartBottomNavBar(),
+      bottomNavigationBar: const CartBottomNavBar(),
     );
   }
 }

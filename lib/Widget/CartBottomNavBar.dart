@@ -7,9 +7,9 @@ class CartBottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomAppBar(
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 15),
+        padding: const EdgeInsets.symmetric(horizontal: 15),
         height: 70,
-        child: Row(
+        child: const Row(
           children: [
             Text(
               "Total: ",
