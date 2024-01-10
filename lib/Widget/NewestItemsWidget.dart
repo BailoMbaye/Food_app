@@ -34,7 +34,9 @@ class NewestItemsWidget extends StatelessWidget {
                 child: Row(
                   children: [
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushNamed(context, "itemPage");
+                      },
                       child: Container(
                         alignment: Alignment.center,
                         child: Image.asset(

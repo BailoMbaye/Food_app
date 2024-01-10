@@ -286,9 +286,6 @@ class CartPage extends StatelessWidget {
                               ],
                             ),
                           ),
-                          Divider(
-                            color: Colors.black,
-                          ),
                           Padding(
                             padding: EdgeInsets.symmetric(
                               vertical: 10,
